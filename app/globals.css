@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Pacifico&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #FFFBF5;
+  --cream-dark: #F5EFE3;
+  --blush: #F9C6CC;
+  --blush-light: #FDEAEC;
+  --blush-dark: #F0A0AA;
+  --lavender: #D4BCFF;
+  --lavender-light: #EDE5FF;
+  --lavender-dark: #B89FE8;
+  --sage: #C1D9B0;
+  --sage-light: #DFF0D0;
+  --sage-dark: #8EAE7B;
+  --butter: #FFF0A8;
+  --butter-light: #FFFADC;
+  --butter-dark: #E6CE60;
+  --sky: #BDE3F5;
+  --sky-light: #DCF0FA;
+  --sky-dark: #85BCD8;
+  --peach: #FFCBA4;
+  --text-dark: #3D2C2C;
+  --text-soft: #7A6060;
+  --text-muted: #A38C8C;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--text-dark);
+  font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.font-display {
+  font-family: 'Pacifico', cursive;
+}
+
+/* Custom Soft Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F9C6CC;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F0A0AA;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

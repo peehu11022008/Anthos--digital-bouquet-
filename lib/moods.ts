@@ -1,0 +1,88 @@
+import type { MoodSuggestion } from '@/types';
+
+export const MOODS: MoodSuggestion[] = [
+  {
+    key: 'romantic',
+    label: 'Romantic',
+    description: 'For the one who makes your heart flutter',
+    suggestedFlowers: ['rose', 'peony', 'lily'],
+    palette: ['#F4A7B9', '#E8A0BF', '#C9B1FF', '#FFCBA4'],
+    suggestedAccessories: ['ribbon', 'heart'],
+    sceneKey: 'sunset',
+    timeOfDay: 'sunset',
+  },
+  {
+    key: 'happy',
+    label: 'Happy',
+    description: 'Bright and cheerful, just like them',
+    suggestedFlowers: ['sunflower', 'daisy', 'tulip'],
+    palette: ['#FCD34D', '#FDE68A', '#BBF7D0', '#BAE6FD'],
+    suggestedAccessories: ['star', 'sparkle'],
+    sceneKey: 'little-garden',
+    timeOfDay: 'morning',
+  },
+  {
+    key: 'soft-and-sweet',
+    label: 'Soft & Sweet',
+    description: 'Gentle, warm, and tender',
+    suggestedFlowers: ['cherry-blossom', 'babys-breath', 'peony'],
+    palette: ['#FBCFE8', '#DDD6FE', '#FDE8F5', '#FEF3C7'],
+    suggestedAccessories: ['bow', 'butterfly'],
+    sceneKey: 'cozy-desk',
+    timeOfDay: 'morning',
+  },
+  {
+    key: 'comfort',
+    label: 'Comfort',
+    description: 'Wrapping them in warmth and care',
+    suggestedFlowers: ['lavender', 'babys-breath', 'lily'],
+    palette: ['#C4B5FD', '#DDD6FE', '#BAE6FD', '#BBF7D0'],
+    suggestedAccessories: ['ribbon', 'sparkle'],
+    sceneKey: 'cozy-desk',
+    timeOfDay: 'afternoon',
+  },
+  {
+    key: 'thank-you',
+    label: 'Thank You',
+    description: 'Gratitude, expressed in flowers',
+    suggestedFlowers: ['hydrangea', 'daisy', 'tulip'],
+    palette: ['#BAE6FD', '#BBF7D0', '#FEF3C7', '#DDD6FE'],
+    suggestedAccessories: ['heart', 'bow'],
+    sceneKey: 'picnic-blanket',
+    timeOfDay: 'afternoon',
+  },
+  {
+    key: 'i-miss-you',
+    label: 'I Miss You',
+    description: 'Distance is hard. Here is something beautiful.',
+    suggestedFlowers: ['lavender', 'cherry-blossom', 'rose'],
+    palette: ['#DDD6FE', '#FBCFE8', '#C4B5FD', '#BAE6FD'],
+    suggestedAccessories: ['heart', 'butterfly'],
+    sceneKey: 'sunset',
+    timeOfDay: 'sunset',
+  },
+  {
+    key: 'celebration',
+    label: 'Celebration',
+    description: 'Pop the confetti, grow the flowers',
+    suggestedFlowers: ['tulip', 'sunflower', 'peony'],
+    palette: ['#FCD34D', '#F9A8D4', '#A78BFA', '#86EFAC'],
+    suggestedAccessories: ['sparkle', 'star', 'bow'],
+    sceneKey: 'little-garden',
+    timeOfDay: 'afternoon',
+  },
+  {
+    key: 'just-because',
+    label: 'Just Because',
+    description: 'No reason needed. That is reason enough.',
+    suggestedFlowers: ['daisy', 'babys-breath', 'tulip'],
+    palette: ['#FFFFFF', '#FEF3C7', '#FBCFE8', '#BBF7D0'],
+    suggestedAccessories: ['ribbon', 'sparkle'],
+    sceneKey: 'picnic-blanket',
+    timeOfDay: 'afternoon',
+  },
+];
+
+export const MOOD_REGISTRY: Record<string, MoodSuggestion> = Object.fromEntries(
+  MOODS.map((m) => [m.key, m])
+);
